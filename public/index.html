@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TriDev.Ai | AI Data Annotation & Web Development</title>
+<meta name="description" content="2D data annotation, AI data services and website development. On-time delivery with 100% accuracy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="#home" class="brand"><img src="assets/logo.png" alt="TriDev.Ai - AI Solutions"></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#services">Services</a><a href="#work">Our Work</a><a href="#process">Process</a><a href="#contact" class="btn small">Get a Quote</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-text">
+    <span class="pill">AI Data • Annotation • Web Development</span>
+    <h1>We build the data and the software <em>behind smarter AI</em></h1>
+    <p>Precise 2D annotation, data labeling and modern websites, delivered on time with 100% accuracy.</p>
+    <div class="cta"><a href="#contact" class="btn">Start a Project</a><a href="#work" class="btn ghost">See Our Work</a></div>
+  </div>
+  <div class="hero-art float">
+    <svg viewBox="0 0 400 300" aria-hidden="true">
+      <rect x="10" y="10" width="380" height="280" rx="18" fill="#ffffff" stroke="#d9def5"/>
+      <circle cx="120" cy="170" r="55" fill="#e8ecff"/><rect x="220" y="120" width="120" height="100" rx="10" fill="#e8ecff"/>
+      <rect class="box" x="60" y="105" width="120" height="130" fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="8 6"/>
+      <rect class="box d2" x="212" y="112" width="136" height="116" fill="none" stroke="#f97316" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="62" y="98" fill="#2563eb" font-size="14">object 98%</text><text x="214" y="104" fill="#f97316" font-size="14">vehicle 99%</text>
+    </svg>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat hover"><b data-count="100">0</b><span>% Accuracy</span></div>
+  <div class="stat hover"><b data-count="500">0</b><span>Projects Delivered</span></div>
+  <div class="stat hover"><b data-count="2">0</b><span>M+ Items Annotated</span></div>
+  <div class="stat hover"><b data-count="0">0</b><span>Missed Deadlines</span></div>
+</section>
+
+<section id="services" class="section">
+  <h2>What We Do</h2><p class="sub">End-to-end AI data and development services.</p>
+  <div class="grid" id="serviceGrid"></div>
+</section>
+
+<section class="banner hover">
+  <h2>On time. Every time. 100% accurate.</h2>
+  <p>Multi-layer quality checks mean you get clean, reliable results without delays.</p>
+  <a href="#contact" class="btn light">Talk to Us</a>
+</section>
+
+<section id="work" class="section">
+  <h2>Our Work</h2><p class="sub">A selection of what we have delivered.</p>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">All</button><button class="chip" data-f="annotation">Annotation</button>
+    <button class="chip" data-f="ai">AI Data</button><button class="chip" data-f="web">Web</button>
+  </div>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section id="process" class="section">
+  <h2>How We Work</h2>
+  <div class="steps">
+    <div class="step hover"><i>1</i><h3>Brief</h3><p>You share goals, data and guidelines.</p></div>
+    <div class="step hover"><i>2</i><h3>Pilot</h3><p>A small sample to confirm quality.</p></div>
+    <div class="step hover"><i>3</i><h3>Production</h3><p>Trained team works with double QA.</p></div>
+    <div class="step hover"><i>4</i><h3>Delivery</h3><p>On-time handoff in your format.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div><h2>Let's work together</h2><p class="sub left">Tell us about your project and we will reply within 24 hours.</p></div>
+  <form id="form" novalidate>
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Email address" required>
+    <select name="service"><option>2D Annotation</option><option>Data Labeling</option><option>Website Development</option><option>Other</option></select>
+    <textarea name="message" rows="5" placeholder="Project details" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+    <p id="status" role="status"></p>
+  </form>
+</section>
+
+<footer><span>© <span id="yr"></span> TriDev.Ai. All rights reserved.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
